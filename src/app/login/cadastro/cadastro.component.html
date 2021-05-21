@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+  <div class="vertical-content page">
+    <div style="margin-top: 40%; position: absolute; width: 100%;">
+      <ion-card>
+        <ion-card-header>
+          CADASTRO
+        </ion-card-header>
+        <ion-card-content>
+          <p style="margin: 20px 0; font-weight: bold; color: #F00;" *ngIf="error">{{error}}</p>
+          <br>
+          <div class="input">
+            <input type="text" id="nome" placeholder="Nome" [(ngModel)]="model.nome" />
+          </div>
+          <div class="input">
+            <input type="text" id="sobrenome" placeholder="CPF" [(ngModel)]="model.cpf" />
+          </div>
+          <div class="input">
+            <input type="text" id="endereco" placeholder="Endereço" [(ngModel)]="model.endereco" />
+          </div>
+          <div class="input">
+            <input type="text" id="telefone" placeholder="Telefone" [(ngModel)]="model.telefone" />
+          </div>
+          <div class="input">
+            <input type="text" id="email" placeholder="Email" [(ngModel)]="model.email" />
+          </div>
+          <div class="input">
+            <input type="password" id="senha" placeholder="Senha" [(ngModel)]="model.senha" />
+          </div>
+          <br>
+          <ion-button (click)="save()">
+            <ion-icon slot="start" name="person-add"></ion-icon>
+            Cadastrar
+          </ion-button>
+          <br>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

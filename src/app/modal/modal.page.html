@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Resultado
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="padding: 10px; text-align: center;">
+  <div style="background-color: white;" id="shareImage">
+    <br>
+    <img src="../../assets/imagem.png">
+    <br>
+    <br>
+    <div style="border: 1px solid black; border-radius: 5px; text-align: center; font-weight: bold; width: 150px; margin-left: auto; margin-right: auto;">
+      {{resultado}}
+    </div>
+    <br>
+    <br>
+    <br>
+    <ion-button (click)="compartilhar()" style="bottom: 0; margin-bottom: 10px;">
+      <ion-icon slot="start" name="checkmark"></ion-icon>
+      Compartilhar
+    </ion-button>
+  </div>
+</ion-content>

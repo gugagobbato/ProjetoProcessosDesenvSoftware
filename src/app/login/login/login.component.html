@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <div class="vertical-content page">
+    <div style="margin-top: 40%; position: absolute; width: 100%;">
+      <ion-card>
+        <ion-card-header>
+          LOGIN
+        </ion-card-header>
+        <ion-card-content>
+          <p style="margin: 20px 0; font-weight: bold; color: #F00;" *ngIf="error">{{error}}</p>
+          <br>
+          <div class="input">
+            <input type="text" id="email" placeholder="Email" [(ngModel)]="login.usuario" />
+          </div>
+          <div class="input">
+            <input type="password" id="senha" placeholder="Senha" [(ngModel)]="login.senha" />
+          </div>
+          <br>
+          <ion-button (click)="logar()">
+            <ion-icon slot="start" name="push"></ion-icon>
+            Login
+          </ion-button>
+          <br>
+          <br>
+          <a class="btn btn-info btn-block" [routerLink]="['/cadastro']">
+            Não possui cadastro?
+          </a>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,124 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="list"></ion-icon>
+      Questionário
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="form-questionario">
+    <ion-card>
+      <ion-card-content>
+        <div>
+          <div class="row">
+            <div class="col">
+              <p>Você está com febre?</p>
+              <div class="row">
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.febre" name="febre" value="0" id="febre" />
+                  <label for="febre">Não</label>
+                </div>
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.febre" name="febre" value="1" id="febre2" />
+                  <label for="febre2">Sim</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p>Você está com tosse seca?</p>
+              <div class="row">
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.tosse" name="tosse" value="0" id="tosse" />
+                  <label for="tosse">Não</label>
+                </div>
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.tosse" name="tosse" value="1" id="tosse2" />
+                  <label for="tosse2">Sim</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p>Você está com coriza?</p>
+              <div class="row">
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.coriza" name="coriza" value="0" id="coriza" />
+                  <label for="coriza">Não</label>
+                </div>
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.coriza" name="coriza" value="1" id="coriza2" />
+                  <label for="coriza2">Sim</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p>Você está com cansaço?</p>
+              <div class="row">
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.cansaco" name="cansaco" value="0" id="cansaco" />
+                  <label for="cansaco">Não</label>
+                </div>
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.cansaco" name="cansaco" value="1" id="cansaco2" />
+                  <label for="cansaco2">Sim</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p>Você está com dor de cabeça?</p>
+              <div class="row">
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.cabeca" name="cabeca" value="0" id="cabeca" />
+                  <label for="cabeca">Não</label>
+                </div>
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.cabeca" name="cabeca" value="1" id="cabeca2" />
+                  <label for="cabeca2">Sim</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p>Você está com dificuldade de respirar?</p>
+              <div class="row">
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.respirar" name="respirar" value="0" id="respirar" />
+                  <label for="respirar">Não</label>
+                </div>
+                <div class="col">
+                  <input type="radio" [(ngModel)]="sintomas.respirar" name="respirar" value="1" id="respirar2" />
+                  <label for="respirar2">Sim</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <ion-button (click)="diagnostico()">
+            <ion-icon slot="start" name="checkmark"></ion-icon>
+            Resultado
+          </ion-button>
+          <ion-button (click)="refazer()">
+            <ion-icon slot="start" name="create"></ion-icon>
+            Refazer
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

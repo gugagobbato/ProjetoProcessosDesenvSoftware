@@ -1,0 +1,7 @@
+{
+  "name": "ucscovid",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
