@@ -29,7 +29,7 @@ export class TabQuestionPage {
     } else if (soma = 1) {
       this.resultado = 'RESFRIADO';
     } else {
-      this.resultado = 'SEM SIMTOMAS';
+      this.resultado = 'SEM SINTOMAS';
     }
 
     const modal = await this.modalController.create({
